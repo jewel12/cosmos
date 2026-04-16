@@ -2,39 +2,39 @@
     "userspace_version": "1.1",
     "build_targets": [
         [
-            "cosmos/cosmoel",
+            "cosmos/cosmoel2",
             "default",
             {
                 "MAKECMDGOALS": "uf2-split-left",
                 "VIK_BUILD_LEFT": "yes",
-                "TARGET": "cosmoel_default_left"
+                "TARGET": "cosmoel2_default_left"
             }
         ],
         [
-            "cosmos/cosmoel",
+            "cosmos/cosmoel2",
             "default",
             {
                 "MAKECMDGOALS": "uf2-split-right",
                 "VIK_BUILD_RIGHT": "yes",
-                "TARGET": "cosmoel_default_right"
+                "TARGET": "cosmoel2_default_right"
             }
         ],
         [
-            "cosmos/cosmoel",
+            "cosmos/cosmoel2",
             "via",
             {
                 "MAKECMDGOALS": "uf2-split-left",
                 "VIK_BUILD_LEFT": "yes",
-                "TARGET": "cosmoel_via_left"
+                "TARGET": "cosmoel2_via_left"
             }
         ],
         [
-            "cosmos/cosmoel",
+            "cosmos/cosmoel2",
             "via",
             {
                 "MAKECMDGOALS": "uf2-split-right",
                 "VIK_BUILD_RIGHT": "yes",
-                "TARGET": "cosmoel_via_right"
+                "TARGET": "cosmoel2_via_right"
             }
         ]
     ]

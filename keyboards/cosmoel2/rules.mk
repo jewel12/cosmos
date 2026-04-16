@@ -2,4 +2,5 @@
 
 VIK_ENABLE = yes
 
+POINTING_DEVICE_DRIVER = azoteq_iqs5xx
 include $(KEYBOARD_PATH_1)/vik/rules.mk
