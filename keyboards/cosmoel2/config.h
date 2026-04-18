@@ -35,5 +35,6 @@
 // #define ROTATIONAL_TRANSFORM_ANGLE 0 // Optional: Rotates the trackball
 // #define POINTING_DEVICE_INVERT_X // Optional: Inverts trackball X
 #define AZOTEQ_IQS5XX_TPS43
+#define POINTING_DEVICE_RIGHT
 
 #include "keyboards/cosmos/cosmoel2/vik/config.vik.post.h"
