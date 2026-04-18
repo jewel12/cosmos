@@ -15,7 +15,8 @@ void keyboard_post_init_user(void) {
     i2c_init();
     uprintf("I2C scan starting...\n");
     for (uint8_t addr = 0x08; addr < 0x78; addr++) {
-        i2c_status_t status = i2c_ping_address(addr << 1, 100);
+        uint8_t dummy;
+        i2c_status_t status = i2c_read_register(addr << 1, 0x00, &dummy, 1, 100);
         if (status == I2C_STATUS_SUCCESS) {
             uprintf("I2C device found at 0x%02X\n", addr);
         }
