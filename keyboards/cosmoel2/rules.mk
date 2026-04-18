@@ -3,4 +3,7 @@
 VIK_ENABLE = yes
 VIK_AZOTEQ_RIGHT = yes
 
+# Required: VIK rules check SPLIT_KEYBOARD but keyboard.json sets it after rules.mk
+SPLIT_KEYBOARD = yes
+
 include $(KEYBOARD_PATH_1)/vik/rules.mk
