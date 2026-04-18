@@ -32,8 +32,8 @@
 #define SPI_MOSI_PIN GP15
 
 #define POINTING_DEVICE_CS_PIN GP13
-// #define ROTATIONAL_TRANSFORM_ANGLE 0 // Optional: Rotates the trackball
-// #define POINTING_DEVICE_INVERT_X // Optional: Inverts trackball X
+#define POINTING_DEVICE_INVERT_X
+#define POINTING_DEVICE_INVERT_Y
 #define AZOTEQ_IQS5XX_TPS43
 #define POINTING_DEVICE_RIGHT
 

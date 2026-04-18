@@ -7,29 +7,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void keyboard_post_init_user(void) {
     debug_enable=true;
-    debug_matrix=true;
     debug_mouse=true;
+}
 
-    uprintf("=== COSMOEL2 DEBUG ===\n");
-#ifdef POINTING_DEVICE_ENABLE
-    uprintf("POINTING_DEVICE_ENABLE: yes\n");
-#else
-    uprintf("POINTING_DEVICE_ENABLE: no\n");
-#endif
-#ifdef SPLIT_POINTING_ENABLE
-    uprintf("SPLIT_POINTING_ENABLE: yes\n");
-#else
-    uprintf("SPLIT_POINTING_ENABLE: no\n");
-#endif
-#ifdef POINTING_DEVICE_RIGHT
-    uprintf("POINTING_DEVICE_RIGHT: yes\n");
-#else
-    uprintf("POINTING_DEVICE_RIGHT: no\n");
-#endif
-#ifdef VIK_AZOTEQ_RIGHT
-    uprintf("VIK_AZOTEQ_RIGHT: yes\n");
-#else
-    uprintf("VIK_AZOTEQ_RIGHT: no\n");
-#endif
-    uprintf("=== END DEBUG ===\n");
+report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
+    mouse_report.x = mouse_report.x * 1.5;
+    mouse_report.y = mouse_report.y * 1.5;
+    return mouse_report;
 }
