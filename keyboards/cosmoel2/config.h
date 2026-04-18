@@ -37,4 +37,6 @@
 #define AZOTEQ_IQS5XX_TPS43
 #define POINTING_DEVICE_RIGHT
 
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
 #include "keyboards/cosmos/cosmoel2/vik/config.vik.post.h"
