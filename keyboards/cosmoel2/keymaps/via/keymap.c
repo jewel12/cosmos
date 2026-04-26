@@ -41,11 +41,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
     if (snipe_enabled) {
-        mouse_report.x = mouse_report.x * 0.4;
-        mouse_report.y = mouse_report.y * 0.4;
-    } else {
         mouse_report.x = mouse_report.x * 1.5;
         mouse_report.y = mouse_report.y * 1.5;
+    } else {
+        mouse_report.x = mouse_report.x * 0.75;
+        mouse_report.y = mouse_report.y * 0.75;
     }
     return mouse_report;
 }
